@@ -1,0 +1,11 @@
+<div class="container">
+  
+  <div class="collection-header"><%= @event.name%>は計<%= @counts.length%>回行われました</div>
+  <ul class="collection with-header">
+    <% @counts.each do |count| %>
+      
+        <div><li class="collection-item"><%= count.updated_at%></li></div>
+      
+    <% end %>
+  </ul>
+</div>

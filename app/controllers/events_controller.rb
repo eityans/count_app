@@ -5,6 +5,9 @@ class EventsController < ApplicationController
   
   def show
     @event = Event.find_by(id: params[:id])
+    if @event
+      @counts = Count.where(event_id: @event.id)
+    end
   end
   
   
