@@ -18,37 +18,20 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1>COLORS</h1>
-      <div class="red white-text">aaaaa</div>
-      <div class="blue white-text">aaaaa</div>
-      <div class="deep-purple white-text">aaaaa</div>
-      
-      <h1>BUTTONS</h1>
-      <button class="btn">Read More</button>
-      <button class="btn waves-effect">Read More</button>
-      <button class="btn btn-large">Read More</button>
-      <button class="btn disabled">Read More</button>
-      <button class="btn btn-large red darken-3 white-text">Read More</button>
-      <button class="btn btn-large blue">Read More</button>
-      <button class="btn btn-large green">Read More</button>
-      <button class="btn btn-large purple">Read More</button>
-      <button class="btn btn-large black">Read More</button>
-      
-      <button class="btn btn-large"><i class="material-icons left">cloud</i>Read More</button>
-      
-      <a href="#" class="btn-floating red btn-large"><i class="large material-icons">add</i></a>
-      
-      <div class="fixed-action-btn">
-        <a href="#" class="btn-floating red btn-large"><i class="large material-icons">mode-edit</i></a>
-        <ul>
-          <li>
-            <a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">insert_chart</i></a>
-          </li>
-          
+    
+    <nav class="orange darken-2" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Navbar Link</a></li>
         </ul>
+  
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
-    </div>
+    </nav>
+    
     <%= yield %>
   </body>
 </html>
