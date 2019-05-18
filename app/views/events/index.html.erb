@@ -2,7 +2,7 @@
   <ul class="collection with-header">
     <li class="collection-header">Events</li>
     <% @events.each do |event| %>
-      <%= link_to("") do%>
+      <%= link_to("/events/#{event.id}") do%>
         <li class="collection-item"><%= event.name%></li>
       <% end %>
     <% end %>
