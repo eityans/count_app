@@ -1,5 +1,6 @@
 <div class="container">
-  
-  <input type="text">
-  <input type="submit" value="イベント作成">
+  <%= form_tag("/events/create") do %>
+    <input type="text" name="name">
+    <input type="submit" value="イベント作成">
+  <% end %>
 </div>
