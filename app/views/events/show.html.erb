@@ -1,6 +1,22 @@
 <div class="container">
   
-  <div class="collection-header"><%= @event.name%>は計<%= @counts.length%>回行われました</div>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h3 class="header center orange-text"><%= @event.name%>は<%= @counts.length%>回行われました</h3>
+      <div class="row center">
+        <h5 class="header col s12 light">Nanka Kai toke</h5>
+      </div>
+      <div class="row center">
+        <%= link_to("/events/#{@event.id}/count",{method: "post"}) do %>
+          <div class="btn-large waves-effect waves-light orange"><i class="material-icons left">add</i><%= @event.name%>をしたよ</div>
+        <% end %>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  
   <ul class="collection with-header">
     <% @counts.each do |count| %>
       

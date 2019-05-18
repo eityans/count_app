@@ -22,4 +22,13 @@ class EventsController < ApplicationController
     end
   end
   
+  def count
+    @count = Count.new(event_id: params[:id])
+    if @count.save
+      redirect_to("/events/#{params[:id]}")
+    else
+      render("/events/show")
+    end
+  end
+  
 end
