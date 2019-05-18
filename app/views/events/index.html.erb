@@ -1,5 +1,10 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
-<% @events.each do |event| %>
-  <%= event.name%>
-<% end %>
+<div class="container">
+  <ul class="collection with-header">
+    <li class="collection-header">Events</li>
+    <% @events.each do |event| %>
+      <%= link_to("") do%>
+        <li class="collection-item"><%= event.name%></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
