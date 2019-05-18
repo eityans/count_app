@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Railsの練習中。ボタンを押した時刻をひたすら記録するアプリを作る。
 
 Things you may want to cover:
 
