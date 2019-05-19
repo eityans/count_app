@@ -25,3 +25,11 @@
     <% end %>
   </ul>
 </div>
+
+<br>
+<br>
+<div class="container">
+  <%= link_to("/events/#{@event.id}/delete",{method: "post"}) do %>
+    <div class="btn waves-effect waves-light orange"><%= @event.name%>の削除</div>
+  <% end %>
+</div>

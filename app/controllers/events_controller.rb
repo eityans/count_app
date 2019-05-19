@@ -31,4 +31,14 @@ class EventsController < ApplicationController
     end
   end
   
+  def delete
+    @event = Event.find_by(id: params[:id])
+    if @event
+      @event.destroy
+      redirect_to("/events/index")
+    else
+      render("/events/show")
+    end
+  end
+  
 end
